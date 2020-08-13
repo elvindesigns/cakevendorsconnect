@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+@font-face {
+  font-family: "TYPE";
+  src: url("../fonts/AmericanTypewriter.ttf");
+}
+
+.my-container {
+  overflow: hidden;
+  padding-top: 20px;
+  position: relative;
+  height: 100vh;
+}
+
+.logo {
+  text-align: center;
+}
+.navigation {
+  position: absolute;
+  top: 120px;
+  right: 50px;
+}
+.navigation ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+.handles {
+  position: absolute;
+  bottom: 120px;
+  right: 100px;
+}
+.handles ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+.super-button {
+  border-radius: 5px;
+  color: white;
+  padding: 15px 22px;
+  background: rgb(61, 89, 152);
+  background: linear-gradient(
+    90deg,
+    rgba(61, 89, 152, 1) 0%,
+    rgba(238, 68, 136, 1) 100%
+  );
+}
+.super-button2 {
+  border-radius: 5px;
+  color: white;
+  padding: 15px 22px;
+  background: rgb(61, 89, 152);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 68, 136, 1) 0%,
+    rgb(241, 169, 61) 100%
+  );
+}
+.info {
+  position: absolute;
+  top: 280px;
+  right: 22%;
+}
+.infoholder {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 20px;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 29px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 29px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 29px -9px rgba(0, 0, 0, 0.75);
+}
+.infoholder2 {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 20px;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 29px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 29px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 29px -9px rgba(0, 0, 0, 0.75);
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+.social ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+.socialCol {
+  text-align: center;
+}
+.bigfont {
+  font-size: 55px;
+}
+.smallfont {
+  font-size: 20px;
+}
+.insta-color {
+  color: #de163c;
+}
+.facebook-color {
+  color: #3d5998;
+}
+.socialCol .desc {
+  font-family: "TYPE";
+}
+
+.sliding-background {
+  background: url("../img/sliding-background.jpg") repeat-x;
+  height: 440px;
+  width: 5076px; /* The image width times 3 */
+  animation: slide 60s linear infinite;
+}
+.model {
+  position: absolute;
+  bottom: -10px;
+  left: 12%;
+}
+.model img {
+  height: calc(0.9 * 100vh);
+}
+.hamburger {
+  display: none;
+}
+.handle-mobile {
+  display: none;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0); /* The image width */
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1130px) {
+  .logo {
+    margin-left: 50px;
+    text-align: unset;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .hamburger {
+    display: inline-block !important;
+  }
+  .m-link {
+    display: none !important;
+  }
+  .navigation {
+    top: 40px;
+  }
+  .info {
+    position: absolute;
+    left: 0;
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social {
+    display: none;
+  }
+  .handle-mobile {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .infoholder2 {
+    height: 80px;
+    width: 280px;
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .infoholder2 ul li {
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .logo {
+    margin-left: 30px;
+  }
+  .logo img {
+    width: 120px;
+  }
+  .model {
+    position: absolute;
+    bottom: -30px;
+    left: 15%;
+  }
+  .info {
+    position: absolute;
+    top: 280px;
+    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .infoholder {
+    height: 200px;
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .socialCol img {
+    width: 40px;
+  }
+  .bigfont {
+    font-size: 40px;
+  }
+}
