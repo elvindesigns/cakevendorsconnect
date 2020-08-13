@@ -10,6 +10,9 @@
   font-family: "TYPE";
   src: url("../fonts/AmericanTypewriter.ttf");
 }
+body {
+  position: relative;
+}
 
 .my-container {
   overflow: hidden;
@@ -30,6 +33,22 @@
   display: inline-block;
   padding-left: 20px;
 }
+
+.mobile-navigation {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-navigation a {
+  display: block;
+  padding: 15px;
+}
+
 .handles {
   position: absolute;
   bottom: 120px;
@@ -142,6 +161,15 @@
 }
 .handle-mobile {
   display: none;
+}
+.nav-mobile {
+  display: none;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 20px;
 }
 
 @keyframes slide {
