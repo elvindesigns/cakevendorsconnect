@@ -27,7 +27,7 @@ body {
 .navigation {
   position: absolute;
   top: 120px;
-  right: 50px;
+  right: 30px;
 }
 .navigation ul li {
   display: inline-block;
