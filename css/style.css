@@ -165,7 +165,7 @@ body {
 .nav-mobile {
   display: none;
   background-color: white;
-  height: 100vh;
+  height: 0vh;
   width: 100%;
   position: fixed;
   top: 0;
