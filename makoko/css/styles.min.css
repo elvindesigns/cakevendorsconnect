@@ -16395,6 +16395,7 @@ a:hover {
   opacity: 0.75;
 }
 header.header {
+  min-height: 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -16545,6 +16546,8 @@ header.header--inner {
 }
 .header-logo {
   margin-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 @media only screen and (min-width: 576px) {
   .header-logo {
@@ -16556,17 +16559,17 @@ header.header--inner {
 }
 .header-logo__img {
   display: inline-block;
-  max-height: 35px;
+  max-height: 80px;
   max-width: auto;
 }
 @media only screen and (min-width: 992px) {
   .header-logo__img {
-    max-height: 40px;
+    max-height: 80px;
   }
 }
 @media only screen and (min-width: 1367px) {
   .header-logo__img {
-    max-height: 45px;
+    max-height: 80px;
   }
 }
 .lang-select {
@@ -17217,7 +17220,7 @@ header.header--intro .button {
 }
 .promo-slider .align-container {
   height: auto;
-  padding: 120px 0 250px 0;
+  padding: 170px 0 250px 0;
 }
 @media only screen and (min-width: 768px) {
   .promo-slider .align-container {

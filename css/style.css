@@ -25,9 +25,10 @@ body {
   text-align: center;
 }
 .navigation {
-  position: absolute;
+  position: fixed;
   top: 120px;
   right: 30px;
+  /* z-index: 9; */
 }
 .navigation ul li {
   display: inline-block;
@@ -43,6 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 99999;
 }
 .mobile-navigation a {
   display: block;

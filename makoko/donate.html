@@ -6,7 +6,7 @@
     <meta name="keywords" content="keywords" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="../img/favicon.ico" />
     <title>DONATE | Makoko Project</title>
     <!-- styles-->
     <link rel="stylesheet" href="css/styles.min.css" />
@@ -38,6 +38,145 @@
   </head>
   <body>
     <div class="page-wrapper">
+      <!-- aside dropdown start-->
+      <div class="aside-dropdown">
+        <div class="aside-dropdown__inner">
+          <span class="aside-dropdown__close">
+            <svg class="icon">
+              <use xlink:href="#close"></use>
+            </svg>
+          </span>
+          <div class="aside-dropdown__item d-lg-none d-block">
+            <ul class="aside-menu">
+              <li class="aside-menu__item">
+                <a class="aside-menu__link" href="../index.html"
+                  ><span>Cake Vendors Connect</span></a
+                >
+              </li>
+              <li class="aside-menu__item">
+                <a class="aside-menu__link" href="./index.html"
+                  ><span>Makoko</span></a
+                >
+              </li>
+              <li class="aside-menu__item">
+                <a class="aside-menu__link" href="#"><span>Donate</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="aside-dropdown__item">
+            <!-- aside menu end-->
+            <div class="aside-inner">
+              <span class="aside-inner__title">Email</span
+              ><a
+                class="aside-inner__link"
+                href="mailto:info.cakevendors@gmail.com"
+                >info.cakevendors@gmail.com</a
+              >
+            </div>
+            <div class="aside-inner">
+              <span class="aside-inner__title">Phone numbers</span
+              ><a class="aside-inner__link" href="tel:+2348124105855"
+                >+ 234 - 812 4105 855</a
+              >
+            </div>
+            <div class="aside-inner">
+              <span class="aside-inner__title">Whatsapp</span
+              ><a class="aside-inner__link" href="http://wa.link/dvtuaa"
+                >+ 234 - 816 0475 119</a
+              >
+            </div>
+            <ul class="aside-socials">
+              <li class="aside-socials__item">
+                <a
+                  class="aside-socials__link"
+                  href="https://instagram.com/cake_vendors_connect"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+
+              <li class="aside-socials__item">
+                <a
+                  class="aside-socials__link"
+                  href="https://facebook.com/groups/cakevendorsconnect"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="aside-dropdown__item">
+            <a class="button button--squared" href="./donate.html"
+              ><span>Donate</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- aside dropdown end-->
+      <!-- header start-->
+      <header class="header header--front">
+        <div class="container-fluid">
+          <div class="row no-gutters justify-content-between">
+            <div class="col-auto d-flex align-items-center">
+              <div class="dropdown-trigger d-none d-sm-block">
+                <div class="dropdown-trigger__item"></div>
+              </div>
+              <div class="header-logo">
+                <a class="header-logo__link" href="index.html"
+                  ><img
+                    class="header-logo__img logo--light"
+                    src="../img/logo_white.png"
+                    alt="logo" /><img
+                    class="header-logo__img logo--dark"
+                    src="../img/logo.png"
+                    alt="logo"
+                /></a>
+              </div>
+            </div>
+            <div class="col-auto">
+              <!-- main menu start-->
+              <nav>
+                <ul class="main-menu">
+                  <li class="main-menu__item">
+                    <a class="main-menu__link" href="../index.html"
+                      ><span>Cake Vendors Connect</span></a
+                    >
+                  </li>
+                  <li class="main-menu__item">
+                    <a class="main-menu__link" href="./index.html"
+                      ><span>Makoko</span></a
+                    >
+                  </li>
+                  <li class="main-menu__item main-menu__item--active">
+                    <a class="main-menu__link" href="#"><span>Donate</span></a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- main menu end-->
+            </div>
+            <div class="col-auto d-flex align-items-center">
+              <!-- lang select start-->
+              <!-- <ul class="lang-select">
+                <li class="lang-select__item lang-select__item--active">
+                  <span>En</span>
+                  <ul class="lang-select__sub-list">
+                    <li><a href="#">French</a></li>
+                    <li><a href="#">Spanish</a></li>
+                    <li><a href="#">Deutsch</a></li>
+                    <li><a href="#">Russian</a></li>
+                  </ul>
+                </li>
+              </ul> -->
+              <!-- lang select end-->
+              <div class="dropdown-trigger d-block d-sm-none">
+                <div class="dropdown-trigger__item"></div>
+              </div>
+              <!-- <a class="button button--squared" href="./donate.html"
+                ><span>Donate</span></a
+              > -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header end-->
       <main class="main">
         <section class="promo-primary promo-primary--shop">
           <picture>
@@ -86,6 +225,12 @@
                           id="last-name"
                           placeholder="Last Name"
                         />
+                        <div class="col-12" style="margin-bottom: 20px;">
+                          <strong
+                            >To Remain Anonymous, Leave First and Last Name
+                            Blank</strong
+                          >
+                        </div>
                         <input
                           class="form__field"
                           type="email"
@@ -195,7 +340,9 @@
                 </li>
 
                 <li class="footer-socials__item">
-                  <a class="footer-socials__link" href=""
+                  <a
+                    class="footer-socials__link"
+                    href="https://instagram.com/cake_vendors_connect"
                     ><i class="fa fa-instagram" aria-hidden="true"></i
                   ></a>
                 </li>
