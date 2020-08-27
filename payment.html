@@ -1,0 +1,25 @@
+<head>
+  <script type="text/javascript" src="http://sandbox.interswitchng.com/collections/public/webpay.js"></script>
+</head>
+<body >
+  <script>
+  $(document).ready(function (){
+    var iswPay = new IswPay({
+          postUrl:"https://sandbox.interswitchng.com/collections/w/pay",
+          amount: 10000,
+          productId: "1076",
+          transRef: "4327408aaa",
+          siteName: "test merchant site",
+          itemId: "101",
+          customerId: "000001",
+          siteRedirectUrl: "http://localhost:8080/webpopupnew.html",
+          currency: "NGN",
+          hash: "A6485CE39EAF476985A89FA74065A992279AB747A7B7FB4032CED18A92A4F0BA9E7C9BC81A6E5A1A469F",
+          onComplete : function (paymentResponse){
+              console.log(paymentResponse);
+          }
+      });
+    });
+      </script>
+</body>
+</html>
